@@ -2,104 +2,319 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人简介</title>
+    <title>Title</title>
+<!--    <link rel="stylesheet" href="home.css">-->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        #header {
-            background-color: #3498db;
-            color: #fff;
-            padding: 20px;
-        }
-
-        #profile-image {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 1200px;
             margin: 0 auto;
-            display: block;
+            font-family: "Arial";
         }
-
-        #name {
-            font-size: 24px;
-            margin: 10px 0;
+        .shadow{
+            margin: 10px 10px;
+            width: 200px;
+            height: 200px;
+            background:black;
+            border-radius:10px;
+            box-shadow:0 0 5px black, 0 0 10px black, 0 0 15px white;
+            display: inline-block;
         }
-
-        #bio {
-            font-size: 16px;
-            margin: 20px 0;
+        a {
+            text-decoration: none;
+            color: darkcyan;
         }
-
-        #separator {
-            border-top: 1px solid #ccc;
-            margin: 30px 0;
+        .name {
+            text-align: center;
+            font-size: 25px;
         }
-
-        .section {
-            width: 33%;
-            float: left;
-            padding: 20px;
-        }
-
-        .section h2 {
+        .describe {
             font-size: 18px;
+            margin-bottom: 20px;
+            margin-top: 10px;
         }
-
-        .section ul {
-            list-style-type: none;
-            padding: 0;
+        .link_top {
+            width: 100%;
+            height: 1px;
+            border-top: solid #bbb 1px;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
-
-        #footer {
-            background-color: #3498db;
-            color: #fff;
-            padding: 10px;
+        .title {
+            display: inline-block;
+            width: 250px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            vertical-align: top;
+        }
+        .context {
+            display: inline-block;
+            width: 940px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        .total {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .edu_left {
+            display: inline-block;
+            width: 650px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        .edu_right {
+            display: inline-block;
+            width: 270px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            vertical-align: top;
         }
     </style>
 </head>
 <body>
-    <div id="header">
-        <img id="profile-image" src="your-profile-image.jpg" alt="Your Profile Image">
-        <h1 id="name">Your Name</h1>
-        <p id="bio">Your Bio</p>
+<!--<img src="zwy.jpg" alt="my_pic" width="300" height="300">-->
+
+
+<div style="text-align: center;">
+    <img class="shadow" alt="" src="zwy.jpg"  />
+</div>
+
+<div class="name">
+    Wenyuan Zhang
+</div>
+<div class="describe">
+    University of Chinese Academy of Sciences | E-mail: zhangwenyuan@iie.ac.cn | <a href="https://scholar.google.com/citations?user=5weUrvgAAAAJ&hl=zh-CN">Google Scholar</a> |
+    <a href="https://github.com/wenyuanzhangTop">GitHub</a>
+</div>
+<div class="link_top"></div>
+
+
+<div class="total">
+    <div class="title">RESEARCH INTERESTS</div>
+    <div class="context">Natural Language Processing, Large Language Model.</div>
+</div>
+
+
+<div class="total">
+    <div class="title">EDUCATION</div>
+    <div class="edu_left">
+        Ph.D., Institute of Information Engineering, Chinese Academy of Sciences
+    </div>
+    <div class="edu_right">
+        Beijing, 2020.09 - present
     </div>
 
-    <div id="separator"></div>
+    <div class="title"></div>
+    <div class="edu_left">
+        Major: Cyberspace Security
+    </div>
+    <div class="edu_right"></div>
 
-    <div class="section">
-        <h2>教育经历</h2>
-        <ul>
-            <li>Educational Achievement 1</li>
-            <li>Educational Achievement 2</li>
-        </ul>
+    <div class="title"></div>
+    <div class="edu_left">
+        Supervisor: Professor <a href="https://liutingwen.ac.cn/">Tingwen Liu</a>
+    </div>
+    <div class="edu_right"></div>
+
+    <div class="title"></div>
+    <div class="edu_left">
+        B.E., Liaoning University
+    </div>
+    <div class="edu_right">
+        Liaoning, 2016.09 - 2020.07
     </div>
 
-    <div class="section">
-        <h2>论文成果</h2>
-        <ul>
-            <li>Publication 1</li>
-            <li>Publication 2</li>
-        </ul>
+    <div class="title"></div>
+    <div class="edu_left">
+        Major: Software Engineering
+    </div>
+    <div class="edu_right"></div>
+</div>
+
+<div class="total">
+    <div class="title">PUBLICATION</div>
+    <div class="context">
+        Minghao Tang, Yongquan He, Yongxiu Xu, Hongbo Xu, <b>Wenyuan Zhang</b> and Yang Lin.
+        A Boundary Offset Prediction Network for Named Entity Recognition.
+        In Findings of the Association for Computational Linguistics: EMNLP 2023 (EMNLP-Findings 2023), December 2023.
     </div>
 
-    <div class="section">
-        <h2>比赛成果</h2>
-        <ul>
-            <li>Achievement 1</li>
-            <li>Achievement 2</li>
-        </ul>
+    <div class="title"></div>
+    <div class="context">
+        Minghao Tang, Yongquan He, Yongxiu Xu, Hongbo Xu, <b>Wenyuan Zhang</b> and Yang Lin.
+        Learning to Correct Noisy Labels for Fine-Grained Entity Typing via Co-Prediction Prompt Tuning.
+        In Findings of the Association for Computational Linguistics: EMNLP 2023 (EMNLP-Findings 2023), December 2023.
     </div>
 
-    <div style="clear: both;"></div>
-
-    <div id="footer">
-        &copy; 2023 Your Name
+    <div class="title"></div>
+    <div class="context">
+        Kun Huang, Yongxiu Xu, Xinghua Zhang, <b>Wenyuan Zhang</b> and Hongbo Xu.
+        Prompting Generative Language Model with Guiding Augmentation for Aspect Sentiment Triplet Extraction.
+        In Pacific Rim International Conference on Artificial Intelligence (PRICAI 2023), November 2023.
     </div>
+
+    <div class="title"></div>
+    <div class="context">
+        Siyuan Li, Hui Wen, Liting Deng, Yu Zhou, <b>Wenyuan Zhang</b>, Zhi Li and Limin Sun.
+        Denoising Network of Dynamic Features for Enhanced Malware Classification.
+        In International Performance Computing and Communications Conference (IPCCC 2023), November 2023.
+    </div>
+
+    <div class="title"></div>
+    <div class="context">
+        Xinghua Zhang, Tianyun Liu, <b>Wenyuan Zhang</b> and Tingwen Liu.
+        <a href="https://aclanthology.org/2023.ccl-3.1/">
+            System Report for CCL23-Eval Task 1: Information Theory Constraint and Paragraph based Paragraph Classical Named Entity Recognition
+        </a>.
+        In Proceedings of the 22nd Chinese National Conference on Computational Linguistics (CCL 2023), August 2023.
+    </div>
+
+    <div class="title"></div>
+    <div class="context">
+        Yongfei Liu, Hong Li, <b>Wenyuan Zhang</b>, Fei Lv and Shuaizong Si.
+        <a href="https://ieeexplore.ieee.org/document/10152670">
+            Intrusion Detection Based on Sampling and Improved OVA Technique on Imbalanced Data
+        </a>.
+        In International Conference on Computer Supported Cooperative Work in Design (CSCWD 2023), May 2023.
+    </div>
+
+    <div class="title"></div>
+    <div class="context">
+        Yongfei Liu, Guangjun Wu, <b>Wenyuan Zhang</b> and Jun Li.
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-22677-9_17">
+            Federated Learning-Based Intrusion Detection on Non-IID Data
+        </a>.
+        In International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP 2022), October 2022.
+    </div>
+
+    <div class="title"></div>
+    <div class="context">
+        <b>Wenyuan Zhang</b>, Guangjun Wu, Yongfei Liu, Binbin Li and Jiawei Sun.
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-24383-7_8">
+            Edge Federated Learning for Social Profit Optimality: A Cooperative Game Approach
+        </a>.
+        In International Conference on Collaborative Computing: Networking, Applications and Worksharing (CollaborateCom 2022), October 2022.
+    </div>
+
+    <div class="title"></div>
+    <div class="context">
+        <b>Wenyuan Zhang</b>, Peng Li, Guangjun Wu and Jun Li.
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-10989-8_24">
+            Privacy-Preserving Deep Learning in Internet of Healthcare Things with Blockchain-Based Incentive
+        </a>.
+        In International Conference on Knowledge Science, Engineering and Management (KSEM 2022), August 2022.
+    </div>
+
+    <div class="title"></div>
+    <div class="context">
+        Yongquan He, Peng Zhang, Luchen Liu, Qi Liang, <b>Wenyuan Zhang</b> and Chuang Zhang.
+        <a href="https://www.ijcai.org/proceedings/2021/264">
+            HIP Network: Historical Information Passing Network for Extrapolation Reasoning on Temporal Knowledge Graph
+        </a>.
+        In International Joint Conference on Artificial Intelligence (IJCAI 2021), August 2021.
+    </div>
+</div>
+
+<div class="total">
+    <div class="title">PATENT</div>
+    <div class="context">
+        <b>Wenyuan Zhang</b>, Guangjun Wu, Jun Li, Binbin Li and Jiawei Sun.
+        一种大规模物联网联邦学习隐私保护方法及系统. CN116055081A
+    </div>
+
+    <div class="title"></div>
+    <div class="context">
+        Jun Li, Shupeng Wang, Guangjun Wu, Lei Zhang, Zhenyu Wang, <b>Wenyuan Zhang</b> and Jiawei Sun.
+        一种基于联邦学习的车载网络信用优先任务卸载方法. CN114489964A
+    </div>
+</div>
+
+
+
+<div class="total">
+    <div class="title">HONORS and AWARDS</div>
+    <div class="edu_left">
+        Merit Student of University of Chinese Academy of Sciences
+    </div>
+    <div class="edu_right">
+        2021.06, 2023.06
+    </div>
+
+    <div class="title"></div>
+    <div class="edu_left">
+        Outstanding cadres of University of Chinese Academy of Sciences
+    </div>
+    <div class="edu_right">
+        2023.06
+    </div>
+
+    <div class="title"></div>
+    <div class="edu_left">
+        Outstanding Graduation Thesis of Liaoning University
+    </div>
+    <div class="edu_right">
+        2020.06
+    </div>
+
+    <div class="title"></div>
+    <div class="edu_left">
+        Software Designer Certificate (Intermediate)
+    </div>
+    <div class="edu_right">
+        2019.06
+    </div>
+</div>
+
+<div class="total">
+    <div class="title">COMPETITION</div>
+    <div class="edu_left">
+        <a href="https://guner2023.pkudh.org/winners.html">
+            CCL 2023 Task 1: Guji Named Entity Recognition (GuNER)
+        </a>, Rank 1/127
+    </div>
+    <div class="edu_right">
+        2023.06
+    </div>
+
+    <div class="title"></div>
+    <div class="edu_left">
+        <a href="https://publicqn.saikr.com/5d65ace18001f9eec90d484519e3d9271579619689852.pdf">
+            Asia and Pacific Mathematical Contest in Modeling (APMCM 2019)
+        </a>, Third Prize
+    </div>
+    <div class="edu_right">
+        2019
+    </div>
+
+    <div class="title"></div>
+    <div class="edu_left">
+        <a href="https://www.nmmcm.org.cn/notice_detail/32">
+            Dimension Cup National College Mathematical Contest in Modeling 2019
+        </a>, Honorable Mentions
+    </div>
+    <div class="edu_right">
+        2019
+    </div>
+
+    <div class="title"></div>
+    <div class="edu_left">
+        Mathematical Contest In Modeling (MCM/ICM 2019), Honorable Mentions
+    </div>
+    <div class="edu_right">
+        2019
+    </div>
+
+    <div class="title"></div>
+    <div class="edu_left">
+            China Undergraduate Mathematical Contest in Modeling (CUMCM 2018), Provincial first prize (Recommended nationwide)
+    </div>
+    <div class="edu_right">
+        2018.9
+    </div>
+
+
+
+</div>
+
 </body>
 </html>
